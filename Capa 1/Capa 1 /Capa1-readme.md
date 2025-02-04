@@ -4,90 +4,94 @@ Este laboratorio explora la Capa 1 (Física) del modelo OSI utilizando VirtualBo
 1. Red nat.
 2. Red interna.
 
-# Debian
+### Debian
 
 Interfaz enp0s3 (RED NAT)
+
 Interfaz enp0s8 (RED INTERNA)
 
 
-# Windows
+### Windows
 
 Adaptador Ethernet (RED NAT)
+
 Adaptador Ethernet 2 (RED INTERNA)
 
 
 
-Comandos Básicos de Verificación
-Debian
-bashCopy# Ver interfaces de red
-ip addr show
+# Comandos Básicos de Verificación
+## Debian
+### Ver interfaces de red
+``ip addr show``
 
-# Ver información específica de una interfaz
-sudo ethtool enp0s3
-sudo ethtool enp0s8
+### Ver información específica de una interfaz
+``sudo ethtool enp0s3``
 
-# Ver estadísticas de una interfaz
-sudo ethtool -S enp0s3
-Windows
-powershellCopy# Ver configuración de red
-ipconfig /all
+``sudo ethtool enp0s8``
 
-# Ver estadísticas
-netstat -e
-netstat -s
-Análisis de Interfaces
-1. Interfaz NAT (enp0s3/Adaptador Ethernet)
-Configuración y Análisis
+### Ver estadísticas de una interfaz
+``sudo ethtool -S enp0s3``
+## Windows
+### Ver configuración de red
+``ipconfig /all``
 
-Razones para analizar primero:
+### Ver estadísticas
+``netstat -e``
 
-Asegura conectividad a Internet
-Mayor variedad de tráfico
-Permite ver funcionamiento con tráfico real
+``netstat -s``
+### Análisis de Interfaces
+### 1. Interfaz NAT (enp0s3/Adaptador Ethernet)
 
+### Razones para analizar primero:
+1. Asegura conectividad a Internet
+2. Mayor variedad de tráfico
+3. Permite ver funcionamiento con tráfico real
 
-
-Parámetros Importantes
-bashCopy# Ejemplo de salida de ethtool
-Link detected: yes
-Speed: 1000Mb/s
-Duplex: Full
-Supported ports: [ TP ]
-Supported link modes: 
+### Parámetros Importantes
+Ejemplo de salida de ethtool
+- Link detected: yes
+- Speed: 1000Mb/s
+- Duplex: Full
+- Supported ports: [ TP ]
+- Supported link modes: 
   - 10baseT/Half
   - 10baseT/Full
   - 100baseT/Half
   - 100baseT/Full
   - 1000baseT/Full
-Pruebas Realizadas
 
-Prueba de Ping
-bashCopyping -c 20 8.8.8.8
+### Pruebas Realizadas
+#### Prueba de Ping
+``bashCopyping -c 20 8.8.8.8``
 
-Prueba de Descarga
-bashCopywget www.example.com
+#### Prueba de Descarga
+``wget www.example.com``
 
-Prueba con CURL
-bashCopycurl www.example.com
+#### Prueba con CURL
+``curl www.example.com``
 
-
-2. Interfaz RED INTERNA (enp0s8/Adaptador Ethernet 2)
-Configuración IP
+### 2. Interfaz RED INTERNA (enp0s8/Adaptador Ethernet 2)
+### Configuración IP
 Debian
-bashCopysudo ip addr add 192.168.100.10/24 dev enp0s8
+``sudo ip addr add 192.168.100.10/24 dev enp0s8``
 Windows
 
 IP: 192.168.100.20
+
 Máscara: 255.255.255.0
+
 Sin puerta de enlace
 
-Pruebas de Conectividad
-bashCopy# Desde Debian
-ping 192.168.100.20
+### Pruebas de Conectividad
+Desde Debian
 
-# Desde Windows
-ping 192.168.100.10
-Simulación de Desconexión
+``ping 192.168.100.20``
+
+Desde Windows
+
+``ping 192.168.100.10``
+
+## Simulación de Desconexión
 Procedimiento
 
 Acceder a VirtualBox con la VM en ejecución
