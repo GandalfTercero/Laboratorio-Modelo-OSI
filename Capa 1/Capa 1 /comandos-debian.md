@@ -1,18 +1,18 @@
 Comandos utilizados en el análisis de la Capa 1 - Debian
-Comandos básicos de verificación
-# Ver todas las interfaces de red
+# Comandos básicos de verificación
+## Ver todas las interfaces de red
 ``ip addr show``
 
-# Ver información específica de la interfaz red NAT
+## Ver información específica de la interfaz red NAT
 ``sudo ethtool enp0s3``
 
-# Ver información específica de la interfaz de red interna
+## Ver información específica de la interfaz de red interna
 ``sudo ethtool enp0s8``
 
-# Ver estadísticas de la interfaz NAT
+## Ver estadísticas de la interfaz NAT
 ``sudo ethtool -S enp0s3``
 
-# Ver estadísticas de la interfaz de red interna
+## Ver estadísticas de la interfaz de red interna
 ``sudo ethtool -S enp0s8``
 # Pruebas de tráfico en interfaz NAT
 ## Instalación de herramientas (si no están instaladas)
