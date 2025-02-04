@@ -1,8 +1,8 @@
 # Laboratorio Modelo OSI - Capa 1 (Física)
 ## Descripción General
 Este laboratorio explora la Capa 1 (Física) del modelo OSI utilizando VirtualBox como plataforma de virtualización. Se analizan dos tipos de interfaces de red en máquinas virtuales con Debian y Windows.
-Entorno de Laboratorio
-Máquinas Virtuales
+1. Red nat.
+2. Red interna.
 
 # Debian
 
