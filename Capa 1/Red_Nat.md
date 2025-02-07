@@ -56,3 +56,28 @@ No hay problemas en la transmisión física.
 La interfaz está funcionando de manera óptima.
 
 #### 3. No hay paquetes descartados, lo que significa que no hay problemas de capacidad
+
+# Windows
+1. Abre el símbolo del sistema (CMD) como administrador:
+
+    Presiona Windows + X
+   
+Selecciona "Windows PowerShell (Admin)"
+
+2. Para ver estadísticas detalladas de la conexión, puedes usar estos comandos:
+``ipconfig /all``
+#### Enfócate prinicpalmente en:
+
+- Tipo de adaptador de red: El nombre de las interfaces de red.
+- Velocidad de la conexión: indica la velocidad de conexión en Mbps
+- Dirección física (MAC): Tu dirección MAC única.
+- Estado de DHCP: Si está habilitado o desabilidato.
+- Sufijo DNS específico para la conexión: importante para la resolución de nombres
+
+#### Para ver estadísticas de rendimiento:
+``netstat -e``
+
+- Muestra estadísticas acumuladas de TODAS tus interfaces de red activas
+- "Bytes" muestra el tráfico total enviado y recibido
+- "Errors" indica errores de transmisión
+
