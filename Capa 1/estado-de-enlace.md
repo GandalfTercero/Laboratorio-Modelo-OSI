@@ -20,12 +20,14 @@ En este caso las condiciones son ideales.
 1. Desde **Debian**, ve a la ventana superior de VirtualBox.
 2. En Dispositivos ---> Red
 (Aquí va foto 1.3)
+
 Actualmente VirtualBox te está mostrando, cómo hay una conexión física para cada interfaz. **Si se desmarca, la interfaz del adaptador 2 (Red Interna)**, ya no aparecerá conectado, y ya no habrá una conexión entre las máquinas virtuales.
 
 - Verificar ejecutando ``sudo ethtool enpos8`` que ya no haya conexión física.
 - Probar que ya no hay conexión interna entre las máquinas.
   ``ip link show enp0s8``
   (Aquí va foto 1.4)
+  
   La interfaz aparece en estado DOWN, significa que no está activa.
 - Probar conexión por medio de ping:
   ``ping 192.168.100.20``
