@@ -6,7 +6,7 @@ Este repositorio contiene una guía práctica para configurar y realizar activid
 
 - **Configuración**: Pasos para configurar VirtualBox y las máquinas virtuales.
 - **Actividades**: Ejercicios prácticos sobre protocolos de red.
-- **Herramientas adicionales**: Guías sobre herramientas como `tcpdump`, `curl` y `ping`.
+- **Herramientas adicionales**: Guías sobre herramientas como `tcpdump` y `ping`.
 
 ## Requisitos
 
