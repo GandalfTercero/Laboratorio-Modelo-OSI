@@ -14,25 +14,37 @@ Este laboratorio tiene como objetivo ayudarte a entender cómo funciona la capa 
 ## ¿Con qué trabajamos?
 **1. Entorno de trabajo:**
   - Dos máquinas virtuales configuradas en VirtualBox:
+    
     - **Debian (Linux):** Actúa como servidor.
+      
     - **Windows 10:** Actúa como cliente.
   - Dos redes configuradas:
+    
     - **Red NAT:** Para conectividad básica.
+      
     - **Red interna:** Para simular un entorno de red local.
   
-**2. Herramientas y protocolos utilizados:**
-    - **Samba:** Configuramos un servidor SMB en Debian para compartir archivos con Windows.
-    - **rpcbind:** Configuramos un servicio RPC básico para realizar llamadas remotas.
-    - **Wireshark:** Capturamos y analizamos el tráfico de red para observar cómo funcionan SMB y RPC a nivel de paquetes.
+#### 2. Herramientas y protocolos utilizados:
 
-**3. Comandos de monitoreo:**
-    - **smbstatus:** Para ver sesiones SMB activas.
-    - **netstat:** Para verificar conexiones en puertos específicos.
-    - **Test-NetConnection (PowerShell):** Para probar conectividad desde Windows.
+  - **Samba:** Configuramos un servidor SMB en Debian para compartir archivos con Windows.
+  
+  - **rpcbind:** Configuramos un servicio RPC básico para realizar llamadas remotas.
+  
+  - **Wireshark:** Capturamos y analizamos el tráfico de red para observar cómo funcionan SMB y RPC a nivel de paquetes.
 
-**4. Operaciones prácticas:**
-    - **SMB:** Crear, modificar y eliminar archivos en un recurso compartido para observar cómo la capa de sesión gestiona las conexiones.
-    - **RPC:** Realizar una llamada remota desde Windows al servidor Debian para entender cómo funciona este protocolo.
+#### 3. Comandos de monitoreo:
+
+  - **smbstatus:** Para ver sesiones SMB activas.
+  
+  - **netstat:** Para verificar conexiones en puertos específicos.
+    
+  - **Test-NetConnection (PowerShell):** Para probar conectividad desde Windows.
+
+#### 4. Operaciones prácticas:
+
+  - **SMB:** Crear, modificar y eliminar archivos en un recurso compartido para observar cómo la capa de sesión gestiona las conexiones.
+    
+  - **RPC:** Realizar una llamada remota desde Windows al servidor Debian para entender cómo funciona este protocolo.
     
 ## ¿Qué logras con este laboratorio?
 Al finalizar este laboratorio, habrás:
