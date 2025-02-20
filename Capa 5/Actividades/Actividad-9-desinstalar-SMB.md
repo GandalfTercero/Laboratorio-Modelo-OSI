@@ -54,3 +54,29 @@ Vuelve a ejecutar el siguiente comando para confirmar que no quedan paquetes rel
 
     dpkg -l | grep samba
 Si no ves ninguna salida, significa que todos los paquetes relacionados con Samba han sido eliminados.
+## 6. Elimina el usuario creado por Samba
+### a. Antes de eliminar el usuario, verifica que realmente existe en el sistema.
+
+	id nuevo_usuario
+ salida esperada:
+
+ (imagen 5.29)
+### b. Eliminar el usuario:
+Para eliminar el usuario, usa el comando userdel. Este comando elimina la cuenta del sistema.
+	
+	sudo userdel nuevo_usuario
+- ``userdel``: Elimina el usuario especificado.
+### c. Eliminar el directorio personal del usuario (opcional)
+Por defecto, userdel no elimina el directorio personal del usuario (/home/nuevo_usuario). Si deseas eliminar también este directorio, usa la opción -r.
+
+	sudo userdel -r nuevo_usuario
+ - Explicación:
+	-r: Elimina el directorio personal del usuario y su correo (si existe).
+### d. Verificar que el usuario ha sido eliminado
+Después de eliminar el usuario, verifica que ya no existe en el sistema.
+
+ 	id nuevo_usuario
+- salida esperada:
+  
+  (imagen 5.30)
+Esto confirma que el usuario ha sido eliminado correctamente.
