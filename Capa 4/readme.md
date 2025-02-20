@@ -6,16 +6,10 @@ Este repositorio contiene una guía práctica para configurar y realizar activid
 
 - **Configuración**: Pasos para configurar VirtualBox y las máquinas virtuales.
 - **Actividades**: Ejercicios prácticos sobre protocolos de red.
-- **Herramientas adicionales**: Guías sobre herramientas como `tcpdump` y `ping`.
+- **Herramientas adicionales**: Guías sobre herramientas como `wireshark` y `ping`.
 
 ## Requisitos
 
 - VirtualBox instalado.
 - Máquinas virtuales Debian y Windows configuradas.
 - Conocimientos básicos de redes y comandos de terminal.
-
-## Cómo usar este repositorio
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/capa 4.git
