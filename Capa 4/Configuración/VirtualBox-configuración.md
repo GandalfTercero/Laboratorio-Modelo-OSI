@@ -3,7 +3,7 @@ Si configuras el Adaptador 1 en modo Bridge, ambas máquinas virtuales estarán 
 En este caso, podrías capturar el tráfico de Windows mientras visita una página web cualquiera, ya que el tráfico pasaría por la interfaz de red de Debian.
 ## 1. En VitualBox:
 * Ve a "Herramientas" > "redes NAT".
-  (imagen 4-0)
+  <img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/1f1cc972b45e404ebea8df33bc00ab2fb1640fdf/Capa%204/im%C3%A1genes%20capa%204/4.0.png></img>
 * Selecciona la red OSI-Lab y haz clic en "Eliminar".
 ### ¿Por qué hay que eliminarlo?
 * Si tienes una red NAT personalizada configurada, VirtualBox la usará incluso si el Adaptador 1 está configurado como Bridge.
