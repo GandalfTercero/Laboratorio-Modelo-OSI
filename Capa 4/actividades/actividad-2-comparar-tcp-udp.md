@@ -29,18 +29,26 @@ Los servidores UDP y TCP en Debian no muestran salida inmediata porque están en
 * Usa este filtro para ver solo el tráfico relevante:
 
       tcp.port == 1234
+  
 <img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/865826e70ed7fc1eaea2032e69720e33056e0b4e/Capa%204/im%C3%A1genes%20capa%204/4.10.png></img>
   
   o
       
       udp.port == 1234
+      
 <img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/865826e70ed7fc1eaea2032e69720e33056e0b4e/Capa%204/im%C3%A1genes%20capa%204/4.11.png></img>
 ## 4. Servidor UDP:
+
 **En Windows:**
+
 <img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/865826e70ed7fc1eaea2032e69720e33056e0b4e/Capa%204/im%C3%A1genes%20capa%204/4.12.png></img>
+
 Una vez ejecutado sale bytes enviados: 40.
+
 **En Debian**
+
 Debes ver el mensaje
+
 <img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/865826e70ed7fc1eaea2032e69720e33056e0b4e/Capa%204/im%C3%A1genes%20capa%204/4.13.png></img>
 
 
