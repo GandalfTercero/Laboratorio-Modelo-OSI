@@ -22,7 +22,7 @@ Este laboratorio tiene como objetivo ayudarte a entender cómo funciona la capa 
     
     - **Red NAT:** Para conectividad básica.
       
-    - **Red interna:** Para simular un entorno de red local.
+    - **Red interna:** Para simular un entorno de red local. En este caso vas a trabajar con esta.
   
 #### 2. Herramientas y protocolos utilizados:
 
