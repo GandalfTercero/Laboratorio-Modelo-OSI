@@ -45,8 +45,7 @@ ping a la dirección IP de Windows.
   
 2. Identificando las tramas ARP
    
-(imagen 2.5)
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/467708eee62207c6020d3a9e367d78397daee038/capa%202/im%C3%A1genes-capa-2/2.5.png>
   a) Primera trama ARP (Request):Color azul.
   
   - MAC origen: 08:00:27:ab:08:7b (dispositivo con IP 192.168.100.10, máquina Debian).
