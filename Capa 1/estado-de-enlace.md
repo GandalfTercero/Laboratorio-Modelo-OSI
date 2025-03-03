@@ -46,3 +46,4 @@ Actualmente VirtualBox te está mostrando, cómo hay una conexión física para 
    
   <img src="https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/ea25546cd64f1702919cc3ff4e38d5fb9dbd8681/Capa%201/Capturas/1.7.png"></img> 
    
+Cuando ejecutas ``ethtool`` estás verificando el estado del enlace físico (Capa 1) y también obtienes información de la Capa 2 (Enlace de Datos). Es una herramienta que te muestra información de ambas capas.
