@@ -2,20 +2,23 @@
 - Usa el filtro:
     
       smb2.cmd == 0
-(imagen 5.25)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/860ff47fdff03adf470a2d68a35d86ae767c6e2c/Capa%205/im%C3%A1genes-capa-5/5.25.png>
+
 # 2. Ver la creación del archivo:
 - Usa el filtro:
 
       smb2.create_action == 0x00000001
 - Esto muestra los paquetes donde se crea el archivo.
 
-(imagen 5.26)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/860ff47fdff03adf470a2d68a35d86ae767c6e2c/Capa%205/im%C3%A1genes-capa-5/5.26.png>
+
 # 3. Ver la escritura en el archivo (modificación):
 - Usa el filtro:
 
       smb2.cmd == 9
-  (imagen 5.27)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/860ff47fdff03adf470a2d68a35d86ae767c6e2c/Capa%205/im%C3%A1genes-capa-5/5.27.png>
 - Esto muestra los paquetes de escritura (SMB2 Write Request/Response).
+
 # 4. Ver la eliminación del archivo:
 - Usa el filtro:
 
