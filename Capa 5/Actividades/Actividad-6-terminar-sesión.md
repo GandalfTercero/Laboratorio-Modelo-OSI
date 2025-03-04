@@ -12,7 +12,7 @@ Usa nuevamente smbstatus para confirmar que no hay sesiones activas:
 
         sudo smbstatus
 
-(imagen 5.13)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/9161de8d560f819a580a427066aff3ba2d13f0f9/Capa%205/im%C3%A1genes-capa-5/5.13.png>
 
 Si la sesión se cerró correctamente, no deberías ver ninguna conexión activa relacionada con el recurso compartido shared.
 ## En Windows:
@@ -27,7 +27,8 @@ Si la sesión se cerró correctamente, no deberías ver ninguna conexión activa
 - Abre una nueva terminal de CMD y ejecuta:
 
       netstat -an | findstr 445
-(imagen 5.14)
+
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/9161de8d560f819a580a427066aff3ba2d13f0f9/Capa%205/im%C3%A1genes-capa-5/5.14.png>
 
 Si no ves ninguna línea relacionada con la IP del servidor Debian (192.168.100.10) y el puerto 445, significa que la sesión se cerró correctamente.
 
