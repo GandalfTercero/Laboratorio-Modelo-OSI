@@ -18,14 +18,15 @@ Usa el siguiente comando para confirmar que el servicio rpcbind está funcionand
     sudo systemctl status rpcbind
 Deberías ver algo como esto:
 
-(imagen 5.15)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/dd0a5379607fd4c5823327f1deb4e2500608951c/Capa%205/im%C3%A1genes-capa-5/5.15.png>
+
 #### 5. Verifica que el puerto RPC (111) esté en uso:
 El puerto predeterminado para RPC es el 111 . Usa netstat para confirmar que el puerto está escuchando conexiones:
 
     netstat -tuln | grep 111
 Deberías ver algo como esto:
 
-(imagen 5.16)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/dd0a5379607fd4c5823327f1deb4e2500608951c/Capa%205/im%C3%A1genes-capa-5/5.16.png>
 
 Esto indica que el servicio RPC está listo para recibir llamadas remotas.
 #### 6. Verifica el firewall en Debian
@@ -38,7 +39,8 @@ Verifica el estado del firewall
     sudo ufw status
 Deberías ver algo como esto:
 
-(imagen 5.19)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/dd0a5379607fd4c5823327f1deb4e2500608951c/Capa%205/im%C3%A1genes-capa-5/5.19.png>
+
 ## En Windows:
 #### 1. Usa PowerShell para probar una llamada RPC:
 Abre PowerShell y ejecuta el siguiente comando para verificar la conectividad al puerto RPC (111):
@@ -46,7 +48,7 @@ Abre PowerShell y ejecuta el siguiente comando para verificar la conectividad al
     Test-NetConnection -ComputerName 192.168.100.10 -Port 111
 Si la conexión es exitosa, verás algo como esto:
 
-(imagen 5.17)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/dd0a5379607fd4c5823327f1deb4e2500608951c/Capa%205/im%C3%A1genes-capa-5/5.17.png>
 
 Esto confirma que el puerto RPC está accesible desde Windows.
 #### 2. Interpretación del resultado:
@@ -56,10 +58,9 @@ Esto confirma que el puerto RPC está accesible desde Windows.
       - Que no haya un firewall bloqueando el puerto 111 en Debian o Windows.
 En mi máquina, salió que era falso:
 
-(imagen 5.18)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/dd0a5379607fd4c5823327f1deb4e2500608951c/Capa%205/im%C3%A1genes-capa-5/5.18.png>
+
 En este caso yo no tenía habilitado el firewall para el puerto de RPC, después de habilitarlo ya me salía **True.**
 
-(imagen 5.20)
-
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/dd0a5379607fd4c5823327f1deb4e2500608951c/Capa%205/im%C3%A1genes-capa-5/5.20.png>
 
