@@ -1,8 +1,8 @@
 # Capa 3 - Capa de enlace de datos.
 ## Objetivo
 Este laboratorio práctico permite explorar la Capa 3 (Red) del modelo OSI, enfocándose en direccionamiento IP, enrutamiento y análisis de paquetes. Aprenderás:
-- Cómo las direcciones IP permiten la comunicación lógica entre redes.
-- El rol de las tablas de enrutamiento y gateways.
+- Comprender el funcionamiento de direcciones IP, enrutamiento y paquetes.
+- Verificar rutas y tablas de enrutamiento.
 - La diferencia entre Capa 2 (Enlace de datos) y Capa 3 (Red).
 
 ## Configuración del Entorno
