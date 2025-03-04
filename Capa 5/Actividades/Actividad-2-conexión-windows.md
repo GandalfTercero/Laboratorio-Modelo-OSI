@@ -13,6 +13,5 @@ b. Si te solicita, ingresa las credenciales de usuario y contraseña configurada
 c. Verifica la conexión:
 Si la conexión es exitosa, verás un mensaje como este:
 
-(imagen 5.9)
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/923435bd8a19e374612d9e6abe07ff9511a68e3b/Capa%205/im%C3%A1genes-capa-5/5.9.png>
 Ahora puedes acceder al recurso compartido a través de la unidad asignada (Z:) en el Explorador de Archivos de Windows.
