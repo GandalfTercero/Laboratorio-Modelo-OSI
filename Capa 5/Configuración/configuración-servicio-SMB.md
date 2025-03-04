@@ -34,7 +34,6 @@ f. Verificar que el servidor Samba está en ejecución
     sudo systemctl status smbd
   Deberías ver algo como esto:
 
-  (imagen 5.8)
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/445bf97bca6408df89969830f333c980230dd3b1/Capa%205/im%C3%A1genes-capa-5/5.8.png>
 
     
