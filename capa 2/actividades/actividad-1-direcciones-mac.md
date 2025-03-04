@@ -30,8 +30,8 @@ Para ver la tabla ARP, muestra las entradas ARP activas o en caché:
 
 #### Explicación del escenario:
 - Interfaz enp0s3 (Red Nat):
-  - MAC local: 08:00:27:10:3f:b2 (la dirección física de tu tarjeta de red en Debian).
-  - MAC en la tabla ARP (52:54:00:12:35:00): Es la dirección MAC del dispositivo al que está conectado (en este caso, el router de la red NAT, probablemente VirtualBox.
+  - **MAC local:** 08:00:27:10:3f:b2 (la dirección física de tu tarjeta de red en Debian).
+  - **MAC en la tabla ARP** (52:54:00:12:35:00): Es la dirección MAC del dispositivo al que está conectado (en este caso, el router de la red NAT, probablemente VirtualBox.
 - Interfaz enp0s8(Red Interna): No se muestra alguna entrada porque:
   - No ha habido tráfico reciente en esa red que requiera resolver direcciones MAC.
   - Las entradas ARP son temporales (se borran después de un tiempo si no hay actividad).
