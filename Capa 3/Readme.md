@@ -20,23 +20,23 @@ Este laboratorio práctico permite explorar la Capa 3 (Red) del modelo OSI, enfo
   - Comandos CLI: ``ping``, ``route``, ``traceroute``, ``arp``.
 
 ## Preguntas para Entender la Diferencia entre Capa 2 y Capa 3
-1. Direccionamiento:
+**1. Direccionamiento:**
 
   - ¿Por qué las direcciones MAC (Capa 2) no se usan para comunicaciones en Internet, pero las IPs (Capa 3) sí?
 
-2. Alcance:
+**2. Alcance:**
 
   - Si dos dispositivos están en la misma red, ¿es necesario un router (Capa 3) para que se comuniquen?
 
-3. Encapsulación:
+**3. Encapsulación:**
 
   - En Wireshark, ¿por qué un paquete ICMP muestra tanto direcciones IP como MAC?
 
-4. Tablas:
+**4. Tablas:**
 
   - ¿Qué ocurriría si eliminas la entrada de la red 192.168.100.0/24 en la tabla de enrutamiento de Debian?
 
-5. Caso Práctico:
+**5. Caso Práctico:**
 
   - Si haces ping desde Debian (10.0.2.5) a Windows (10.0.2.6) en la red NAT:
     - ¿Se usa ARP? ¿Por qué?
