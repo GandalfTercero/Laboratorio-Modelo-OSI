@@ -1,4 +1,4 @@
-## 1. Detén el servicio Samba
+ ## 1. Detén el servicio Samba
 Antes de desinstalar Samba, detén los servicios relacionados (smbd y nmbd):
 		
     sudo systemctl stop smbd
@@ -60,7 +60,8 @@ Si no ves ninguna salida, significa que todos los paquetes relacionados con Samb
 	id nuevo_usuario
  salida esperada:
 
- (imagen 5.29)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/d2bc4e8b803d33e07a0e910f3eb60e4871f14fa4/Capa%205/im%C3%A1genes-capa-5/5.29.png>
+
 ### b. Eliminar el usuario:
 Para eliminar el usuario, usa el comando userdel. Este comando elimina la cuenta del sistema.
 	
@@ -78,5 +79,6 @@ Después de eliminar el usuario, verifica que ya no existe en el sistema.
  	id nuevo_usuario
 - salida esperada:
   
-  (imagen 5.30)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/d2bc4e8b803d33e07a0e910f3eb60e4871f14fa4/Capa%205/im%C3%A1genes-capa-5/5.30.png>
+
 Esto confirma que el usuario ha sido eliminado correctamente.
