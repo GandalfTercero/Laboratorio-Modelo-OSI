@@ -49,7 +49,7 @@ ping a la dirección IP de Windows.
   a) Primera trama ARP (Request):Color azul.
   
   - MAC origen: 08:00:27:ab:08:7b (dispositivo con IP 192.168.100.10, máquina Debian).
-  - MAC destino: Broadcast (envía a todos los dispositivos en la red).
+  - MAC destino: Broadcast (envía a todos los dispositivos en la red, ya que no está en la tabla ARP).
   - El dispositivo 192.168.100.10 pregunta: "¿Quién tiene la IP 192.168.100.20?".
     
   b) Segunda trama ARP (Reply): Color verde.
