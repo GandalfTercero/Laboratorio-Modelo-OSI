@@ -7,7 +7,8 @@ El propósito principal es:
 
 ## En Debian (bash):
     traceroute 8.8.8.8
-(imagen 3.10)
+
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/e8889fbbbb96626dddd82f5c303d362a89c69689/Capa%203/im%C3%A1genes-capa-3/3.10.png>
 
 ### Análisis en la salida:
 - Primer salto : 10.0.2.1 (el gateway NAT de VirtualBox).
@@ -24,7 +25,7 @@ El propósito principal es:
 ## Windows (cmd):
     tracert 8.8.8.8
     
-(imagen 3.11)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/e8889fbbbb96626dddd82f5c303d362a89c69689/Capa%203/im%C3%A1genes-capa-3/3.11.png>
 
 #### Análisis en la salida:
 - **Primer salto** : ``10.0.2.1`` (el gateway NAT de VirtualBox).
