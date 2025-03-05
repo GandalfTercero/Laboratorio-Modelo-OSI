@@ -11,13 +11,13 @@ Entender cómo las VMs acceden a Internet a través de NAT.
     ping 8.8.8.8  # Ping a una IP pública (Google DNS)
     ping google.com  # Requiere DNS
 
-(imagen 3.6)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/65ec6b0cdbb94091210bdcf828d1fa5e583a8f1b/Capa%203/im%C3%A1genes-capa-3/3.6.png>
 
 ### En Windows:
     ping 8.8.8.8  # Ping a una IP pública (Google DNS)
     ping google.com  # Requiere DNS
     
-(imagen 3.7)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/65ec6b0cdbb94091210bdcf828d1fa5e583a8f1b/Capa%203/im%C3%A1genes-capa-3/3.7.png>
 
 ## Análisis con Wireshark:
 Aquí tienes una lista de elementos clave que debes observar en Wireshark durante el análisis:
@@ -37,14 +37,15 @@ Aquí tienes una lista de elementos clave que debes observar en Wireshark durant
       - Desde la perspectiva de la VM, los paquetes tienen como origen la IP privada (10.0.2.x).
       - Desde la perspectiva del host físico (si capturas tráfico en el host), los paquetes tendrán como origen la IP pública del host, es decir: desde la perspectiva de Internet, el tráfico parece provenir del host físico, no de las VMs.
 5. Resolución DNS
-    - Si haces ping google.com, observa cómo se resuelve el nombre de dominio a una IP pública:
-    - Busca paquetes DNS (filtrando por dns en Wireshark).
-        - **Debian**:
-      (imagen 3.8)
+- Si haces ping google.com, observa cómo se resuelve el nombre de dominio a una IP pública:
+- Busca paquetes DNS (filtrando por dns en Wireshark).
+- **Debian**:
 
-        - **Windows**:
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/65ec6b0cdbb94091210bdcf828d1fa5e583a8f1b/Capa%203/im%C3%A1genes-capa-3/3.8.png>
+
+- **Windows**:
           
-      (imagen 3.9)
-
-     - Estás viendo cómo las VMs resuelven nombres de dominio (google.com, client.wns.windows.com) en direcciones IP.
-     - Consultas inversas : También estás viendo cómo las VMs intentan resolver direcciones IP de vuelta a nombres de dominio.
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/65ec6b0cdbb94091210bdcf828d1fa5e583a8f1b/Capa%203/im%C3%A1genes-capa-3/3.9.png>
+      
+- Estás viendo cómo las VMs resuelven nombres de dominio (google.com, client.wns.windows.com) en direcciones IP.
+- Consultas inversas : También estás viendo cómo las VMs intentan resolver direcciones IP de vuelta a nombres de dominio.
