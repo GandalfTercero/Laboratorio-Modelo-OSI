@@ -10,7 +10,7 @@ Ahora que sabemos que las IPs están configuradas correctamente, podemos verific
 ### En Debian:
     ping 192.168.100.20  # Ping a Windows (Red Interna)
 
-(imagen 3.4)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/2e4ca815c0116cb90a8d6e7373ccb396849e3c87/Capa%203/im%C3%A1genes-capa-3/3.4.png>
 
 ### En Windows (cmd):
     ping 192.168.100.10  # Ping a Debian (Red Interna)}
@@ -22,7 +22,7 @@ Mientras ejecutas los comandos ``ping``, observa los paquetes capturados en Wire
     - Origen: ``192.168.100.20`` (Windows) → Destino: ``192.168.100.10`` (Debian).
   - Asegúrate de que los paquetes sean de tipo ICMP (protocolo usado por ``ping``).
 
-(imagen 3.5)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/2e4ca815c0116cb90a8d6e7373ccb396849e3c87/Capa%203/im%C3%A1genes-capa-3/3.5.png>
 
 #### 1. Paquetes ICMP de solicitud y respuesta :
 - Cuando haces ``ping``, se envían paquetes ICMP de tipo "Echo Request" desde la máquina origen.
