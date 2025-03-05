@@ -2,12 +2,13 @@
 ## En Debian:
     ip a # ver interfacez y direcciones ip
 
-(imagen 3.1)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/e37cac97ac78b431f0c551b2d783d9759449028b/Capa%203/im%C3%A1genes-capa-3/3.1.png>
+
 #### Asegúrate de que ambas VMs tengan las IPs configuradas correctamente en ambas redes (NAT e Interna).
-  
+
     ip r # Mostrar tabla de enrutamiento
 
-(imagen 3.2)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/e37cac97ac78b431f0c551b2d783d9759449028b/Capa%203/im%C3%A1genes-capa-3/3.2.png>
 
 #### Resumen general de la tabla de enrutamiento:
 
@@ -26,7 +27,7 @@ La tabla de enrutamiento te muestra cómo tu sistema decide qué hacer con los p
     ipconfig /all  # Ver interfaces y direcciones IP
     route print  # Mostrar tabla de enrutamiento
 
-(imagen 3.3)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/e37cac97ac78b431f0c551b2d783d9759449028b/Capa%203/im%C3%A1genes-capa-3/3.3.png>
 
 #### Resumen general de la tabla de enrutamiento:
 
