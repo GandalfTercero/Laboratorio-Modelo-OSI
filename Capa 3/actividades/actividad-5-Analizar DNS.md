@@ -10,7 +10,7 @@ Ver cómo se resuelven nombres de dominio a IPs.
 
 Lo hice con windows:
   
-(imagen 3.13)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/217a572e171837800756a00c8ed1a9aa95be49e2/Capa%203/im%C3%A1genes-capa-3/3.13.png>
 
 **Explicación:**
 - **Servidor** : ``RTK_GW.bbrouter`` es el nombre del servidor DNS que respondió a tu consulta.
@@ -24,7 +24,7 @@ Lo hice con windows:
 
 ### 3. Captura de Wireshark durante ``nslookup``
 
-(imagen 3.12(2))
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/217a572e171837800756a00c8ed1a9aa95be49e2/Capa%203/im%C3%A1genes-capa-3/3.12%20(2).png>
 
 - Líneas 7-10: Consultas correctas
   - Consulta A :
@@ -40,13 +40,13 @@ Antes de enviar el ping, tu máquina necesita saber la dirección IP de google.c
   - Si no está en caché, tu máquina vuelve a consultar al servidor DNS para obtener la dirección IP.
 En este caso, hay una nueva consulta DNS (``A google.com``) justo antes del ``ping``. Esto significa que la dirección IP no estaba en caché o que el sistema decidió volver a resolver el nombre por seguridad.
 
-(imagen 3.12)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/217a572e171837800756a00c8ed1a9aa95be49e2/Capa%203/im%C3%A1genes-capa-3/3.12.png>
 
 ### Después de obtener la dirección IP, tu máquina le envía un ping a Google
 Una vez que tu máquina tiene la dirección IP de google.com (por ejemplo, 142.250.78.174), envía un paquete ICMP (ping) hacia esa dirección.
 Google responde con un paquete ICMP, indicando que está disponible.
 
-(imagen 3.14)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/217a572e171837800756a00c8ed1a9aa95be49e2/Capa%203/im%C3%A1genes-capa-3/3.14.png>
 
 ## Resumen del flujo completo
 1. ``nslookup google.com`` :
