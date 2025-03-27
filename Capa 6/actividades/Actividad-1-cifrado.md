@@ -43,8 +43,8 @@
    2. Modifica las líneas para usar tus archivos:
       - Reemplaza las rutas anteriores con las rutas de los archivos que generaste con OpenSSL:
 
-      SSLCertificateFile      /etc/ssl/certs/apache-selfsigned.crt
-      SSLCertificateKeyFile   /etc/ssl/private/apache-selfsigned.key
+              SSLCertificateFile      /etc/ssl/certs/apache-selfsigned.crt
+              SSLCertificateKeyFile   /etc/ssl/private/apache-selfsigned.key
     - Aquí se especifican las rutas del certificado (``SSLCertificateFile``) y la clave privada (``SSLCertificateKeyFile``).
     - Estos archivos son los que generaste en el paso anterior (b).
 
@@ -55,8 +55,7 @@
 - ``a2ensite default-ssl`` : Activa el sitio SSL configurado en Apache.
 - **Reiniciar Apache** : Aplica los cambios realizados.
 
-(imagen 6.1)
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/403ae8dedd1bde95e0cacb2891f914d1e0ac0dd0/Capa%206/Im%C3%A1genes-capa-6/6.1.png>
 Si te aparece ese mensaje:
 
 1. Recarga Apache:
@@ -105,17 +104,17 @@ Ahora, en tu máquina Windows:
 2. Ingresa la dirección ``http://192.168.100.10`` en la barra de direcciones.
 Deberías de ver lo siguiente en el navegador:
 
-(imagen 6.2)
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/403ae8dedd1bde95e0cacb2891f914d1e0ac0dd0/Capa%206/Im%C3%A1genes-capa-6/6.2.png>
  
 Esto generará una solicitud HTTP desde Windows hacia el servidor Debian. En Wireshark, verás los paquetes correspondientes a esta solicitud.
 
-(imagen 6.3)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/403ae8dedd1bde95e0cacb2891f914d1e0ac0dd0/Capa%206/Im%C3%A1genes-capa-6/6.3.png>
+
 
 Recuerda que en esta **Capa de Presentación** se centra principalmente en el formato de los datos y cómo se presentan al navegador, entonces:
 
-  (imagen 6.4)
-
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/403ae8dedd1bde95e0cacb2891f914d1e0ac0dd0/Capa%206/Im%C3%A1genes-capa-6/6.4.png>
+  
 #### 1. Solicitud HTTP (GET /)
    
 **¿Qué significa GET /?**
@@ -168,12 +167,12 @@ Recuerda que en esta **Capa de Presentación** se centra principalmente en el fo
 ### b) Acceso HTTPS
 En el mismo navegador, ingresa la dirección ``https://192.168.100.10``.
 
-   (imagen 6.5)
-   
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/403ae8dedd1bde95e0cacb2891f914d1e0ac0dd0/Capa%206/Im%C3%A1genes-capa-6/6.5.png>
+      
 Como estás usando un certificado autofirmado, el navegador mostrará una advertencia de seguridad. Acepta la advertencia para continuar.
 Esto generará una solicitud HTTPS. En Wireshark, verás el proceso de cifrado (TLS Handshake) y el tráfico posterior cifrado.
 
-(imagen 6.6)
+<img src=https://github.com/GandalfTercero/Laboratorio-Modelo-OSI/blob/403ae8dedd1bde95e0cacb2891f914d1e0ac0dd0/Capa%206/Im%C3%A1genes-capa-6/6.6.png>
 
 #### 1. Client Hello
 - **Paquete 76** :
